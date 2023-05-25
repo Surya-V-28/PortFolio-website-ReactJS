@@ -1,0 +1,76 @@
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+.NavBar-top-class {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: blueviolet;
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.NavBar-ul-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  text-align: center;
+}
+
+.NavBar-li-list {
+  padding: 20px;
+  cursor: pointer;
+}
+.link-navBar-list {
+  text-decoration: none;
+  color: black;
+}
+.NavBar-li-list:hover {
+  background-color: black;
+  .link-navBar-list {
+    color: white;
+  }
+}
+
+.Portfolio-name-navBar {
+  padding-left: 20px;
+}
+.NavBar-li-list-button {
+  padding: 15px;
+  align-items: center;
+  display: none;
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .NavBar-ul-list {
+    position: absolute;
+    left: 0px;
+    display: flex;
+    top: 68px;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    align-items: flex-start;
+    background-color: blue;
+    transform: translateX(-100%);
+    display: none;
+    z-index: 2;
+    transition: 0.3s;
+  }
+  .NavBar-ul-list.open {
+    display: flex;
+    transition: 0.3s;
+    transform: translateX(0%);
+  }
+  .NavBar-li-list-button {
+    display: block;
+  }
+}
