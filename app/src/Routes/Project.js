@@ -7,7 +7,7 @@ const Project = () => {
   return (
     <>
       <NavBar />
-      <HeroImgProject  heading="projects" textcontext="project i recently worked on"/>
+      <HeroImgProject  heading="projects." textcontext="projects i recently worked on"/>
       <WorkCard></WorkCard>
       <Footer></Footer>
     </>

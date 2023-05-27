@@ -25,13 +25,13 @@ const Footer = () => {
                             style={{ fontSize: "30px", color: "white", margin: "10px" }}
                         >
                         </MdEmail>
-                        <p style={{marginLeft:'50px',marginTop:"-40px"}} > surya.woot.231@gmail.com</p>
+                       <a href="mailto:surya.woot.231@gmail.com" style={{color:'white'}}> <p style={{marginLeft:'50px',marginTop:"-40px"}} > surya.woot.231@gmail.com</p></a>
                     </div>
                 </div>
                 <div className="Footer-Right">
                     <div className="Footer-Right-Container">
                         <h4> About me</h4>
-                        <p>As A passionate person with recent graduate form the university major in Computer Science and Electronics ans Mathematics</p>
+                        <p>Passionate technologist, hungry learner, experienced in app/web development and ML & AI algorithms. Loves AI projects. Tech is my passion!</p>
                         <div className="Footer-Right-Social-Icons">
                             <a href="https://www.linkedin.com/in/surya-v-835b94237/" target="blank">
                             <AiFillLinkedin style={{fontSize:'35px', color:'white',paddingLeft:'10px'}}></AiFillLinkedin>

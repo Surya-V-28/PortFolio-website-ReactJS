@@ -1,0 +1,131 @@
+.About-Left-Controller-to-contact {
+  width: 60px;
+  height: auto;
+  align-items: center;
+  color: black;
+  padding: 8px 20px;
+  margin-left: 20px;
+  background-color: yellow;
+  border: 2px solid white;
+  border-radius: 10%;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.About-left-info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.About-left-info h1 {
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.About-left-info p {
+  max-width: 400px;
+}
+
+.About-page-parent-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+.About-Right-image-stack {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.About-stack-image-parent {
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.image-one {
+  position: relative;
+  top: 0px;
+  left: 130px;
+  height: 100%;
+  left: 130;
+  width: 70%;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.image-two {
+  position: absolute;
+  left: 250px;
+  top: 30px;
+  height: 100%;
+  border-radius: 50%;
+  width: 70%;
+  border: 3px solid white;
+}
+
+.imagethree {
+  position: absolute;
+  height: 100%;
+  top: 30px;
+  left: -10px;
+  border-radius: 50%;
+  width: 70%;
+  border: 3px solid white;
+}
+
+@media screen and (max-width: 1168px) {
+  .About-page-parent-container {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  .About-Right-image-stack {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .About-Right-image-stack {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+  
+  }
+}
+
+.Hover-effect-in-about-page:hover {
+  padding: 13px 34px;
+  transition: all ease-out 0.4s;
+  .About-Left-Controller-to-contact {
+    background-color: aqua;
+  }
+}
+@media screen and (max-width:590px) {
+  .About-Right-image-stack {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 0%;
+  
+  }
+}
+
+@media screen and (max-width:550px) {
+  .About-Right-image-stack {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 0%;
+    display: none;
+  }
+}
+ 

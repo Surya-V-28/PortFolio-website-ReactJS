@@ -3,34 +3,39 @@ import "./NavbarStyle.css";
 import { useState } from "react";
 
 import { AiOutlineMenuUnfold, AiOutlineClose } from "react-icons/ai";
+import { NavLink } from 'react-router-dom';
 
+// Inside your component's render method
+// {/* <NavLink to="/another-page">Go to Another Page</NavLink> */}
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="NavBar-top-class">
-      <h1 className="Portfolio-name-navBar">Protfolio</h1>
+      <a href="/" style={{color:'black'}}>
+      <h1 className="Portfolio-name-navBar">Protfolio.</h1></a>
       <ul className={`NavBar-ul-list ${isOpen && "open"}`}>
         <li className="NavBar-li-list">
-          <a href="/" className="link-navBar-list">
+          <NavLink to="/" className="link-navBar-list">
             Home
-          </a>
+          </NavLink>
         </li>
         <li className="NavBar-li-list">
-          <a href="/about" className="link-navBar-list">
+          
+          <NavLink to="/about" className="link-navBar-list">
             About
-          </a>
+          </NavLink>
         </li>
         <li className="NavBar-li-list">
-          <a href="/project" className="link-navBar-list">
+          <NavLink    to="/project" className="link-navBar-list">
             {" "}
             Project
-          </a>
+          </NavLink>
         </li>
         <li className="NavBar-li-list">
-          <a href="/contact" className="link-navBar-list">
+          <NavLink to="/contact" className="link-navBar-list">
             Contact
-          </a>
+          </NavLink>
         </li>
       </ul>
       <div className="NavBar-li-list-button" onClick={() => setIsOpen(!isOpen)}>
