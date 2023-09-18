@@ -1,0 +1,109 @@
+
+
+.box {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgba(41, 40, 40, 0.5);
+    overflow: hidden;
+    margin-right: 50px;
+    
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    inset: -10px 140px;
+    background: linear-gradient(315deg, #00ccff,#d24cb5);
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+
+.box:hover::before{
+    inset: -20px 0px;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box::after {
+    content: "";
+    position:absolute;
+    inset: 6px;
+    background:rgba(41, 40, 40, 1);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.profile-photo {
+    position: absolute;
+    inset: 30px;
+    border: wheat solid 2px;
+    border-radius: 50%;
+    z-index: 3;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+   z-index: 3;
+}
+
+.box:hover  .profile-photo img {
+    opacity: 0;
+}
+
+
+
+.profile-photo h2 {
+    position: relative;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.5em;
+    color: azure;
+    text-transform: uppercase;
+   text-align: center;
+}
+
+
+.profile-photo h2 span {
+    font-weight: 500;
+    font-size: 0.75em;
+}
+
+
+.profile-photo a {
+    position: relative;
+    padding: 10px 20px ;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: #00ccff;
+    font-weight: 500;
+    color: white;
+     transition: 0.5s;
+}
+
+.profile-photo a:hover { 
+    letter-spacing: .2em;
+}

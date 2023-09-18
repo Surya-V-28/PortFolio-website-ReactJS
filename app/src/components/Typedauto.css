@@ -1,0 +1,31 @@
+.Typed-auto{
+    position: relative;
+    left: 0px;
+    font-size:60px;
+    color:#fff;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+    width:100%;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #eeade5);
+    line-height:0.7em;
+    outline:none;
+    animation :animateyas 5s linear infinite;
+  }
+  
+.typed-full {
+    font-size:30px;
+}  
+  
+  @keyframes animateyas{
+    0%{
+      color: #eeade5;
+      box-shadow:none;
+    }
+    100%{
+      color: #fff;
+      text-shadow:0 0 10px #da7dc2,
+                  0 0 20px #da7dc2,
+                  0 0 40px #da7dc2,
+                  0 0 80px #da7dc2;
+    }
+}

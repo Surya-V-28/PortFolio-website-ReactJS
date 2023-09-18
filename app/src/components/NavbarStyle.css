@@ -2,19 +2,73 @@ ul,
 li {
   list-style: none;
   text-decoration: none;
+  padding-right: 15px;
+  align-items: center;
+  
 }
+ 
+.NavBar-top-class {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: blueviolet;
+}
+.NavBar-ul-list{
+  display: flex;
+  flex-direction: row;
+  margin-right: 50px;
+  
+}
+.NavBar-li-list-button {
+  display: none;
+  
+}
+.link-navBar-list:hover::after {
+  content: '';
+ 
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  transition: all 0.5s ease-in-out;
+}
+
+.link-navBar-list:hover::after {
+  height: 5px;
+}
+
+/* .NavLink::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffff00;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(0);
+} */
+
+.NavLink:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+/*
 .NavBar-top-class {
   z-index: 2;
   position: fixed;
   width: 100%;
   height: 70px;
-  background-color: blueviolet;
+  background-color: rgb(214, 171, 255);
   margin: 0px 0px 0px 0px;
   display: flex;
   justify-content: space-between;
 }
 .NavBar-ul-list {
   list-style: none;
+  color: aqua;
   display: flex;
   flex-direction: row;
   margin: 0px;
@@ -50,11 +104,11 @@ background-color: red;
 transform-origin: bottom right;
 transition: transform 0.25s ease-out;
 }
+
 .link-navBar-list:hover:after{
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
 .Portfolio-name-navBar {
   padding-left: 20px;
 }
@@ -67,6 +121,15 @@ transition: transform 0.25s ease-out;
   margin-bottom: auto;
   cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
   .NavBar-ul-list {
@@ -92,4 +155,4 @@ transition: transform 0.25s ease-out;
   .NavBar-li-list-button {
     display: block;
   }
-}
+} */
