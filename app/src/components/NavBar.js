@@ -1,7 +1,6 @@
 import React from "react";
 import "./NavbarStyle.css";
 import { useState } from "react";
-
 import { AiOutlineMenuUnfold, AiOutlineClose } from "react-icons/ai";
 import { NavLink } from 'react-router-dom';
 
@@ -21,14 +20,12 @@ const NavBar = () => {
           </NavLink>
         </li>
         <li className="NavBar-li-list">
-          
           <NavLink to="/about" className="link-navBar-list">
             About
           </NavLink>
         </li>
         <li className="NavBar-li-list">
           <NavLink    to="/project" className="link-navBar-list">
-            {" "}
             Project
           </NavLink>
         </li>
